@@ -1,7 +1,7 @@
 # Maintainer: Alexis Rouillard <contact@arouillard.fr>
 
 pkgname=waybar-git
-pkgver=r2429.09142fa3
+pkgver=r3433.8ad7c75d
 pkgrel=1
 pkgdesc='Highly customizable Wayland bar for Sway and Wlroots based compositors (GIT)'
 arch=('x86_64')
@@ -69,7 +69,7 @@ build() {
           --buildtype=plain \
           --auto-features=enabled \
           -Dexperimental=true \
-          -Dcava=disabled \
+          -Dcava=enabled \
           -Dtests=disabled \
           "${srcdir}/build"
     ninja -C "${srcdir}/build"
